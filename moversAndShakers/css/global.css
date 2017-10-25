@@ -1,0 +1,197 @@
+/*
+ *  Nicholas Burns
+ *  Located: ~/css/
+ *  Description: This is the global stylsheet.
+ *  
+ */
+
+/* RED      background-color: #fef; border: 1px solid red; */
+/* GREEN    background-color: #f0fff0; border: 1px solid green; color: green; */
+/* GREY     background-color: #ccc; border: 1px solid #999; */
+
+/* 40px | 16=2.5em */
+/* 30px | 16=1.875em */
+/* 14px | 16=0.875em */
+
+/* dark orange  #e34c26 */
+/* light orange #f06529 */
+
+/* font-style font-variant font-weight font-size/line-height font-family */
+
+/* a:after  { content: " " attr(title); } */
+
+
+html,body {
+    height:100%;
+}
+
+/* body */
+body { 
+  width: 800px;
+  background-color:#eee;
+  color: #555;
+  font-size: 1em;          /* Base font size: 87.5% = 14px */
+  font-family: sans-serif; 
+  line-height: 1.429;      /* 1.429 */
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+  margin-left: 30px;
+  text-align: left;
+  border: 1px solid transparent;
+}
+
+/* standard utilities */
+.noborder { border: 0px; }
+.center   { margin-left: auto; margin-right: auto; border:1px solid transparent; text-align: center; }
+.clear    { clear: both; }
+.default  {  }
+
+article, aside, footer, header, hgroup, nav, section { display: block; }
+footer  { clear: both; padding-top: 30px; }
+section { clear: left; }
+article { padding: 20px; text-align: center; }
+caption, 
+figcaption { 
+  padding-bottom: 15px; 
+  padding-top: 15px; 
+  font-size: 1.4em; font-family: verdana; 
+  text-align: center; 
+}
+
+/* headings */
+h1 { font-size: 1.571em }  /* 22px */
+h2 { font-size: 1.429em }  /* 20px */
+h3 { font-size: 1.286em }  /* 18px */
+h4 { font-size: 1em }  /* 16px */
+h5 { font-size: 1em     }   /* 14px */
+h6 { font-size: 1em     }   /* 14px */
+
+h1, h2, h3, h4, h5, h6 {
+   line-height: 1.1;
+   margin-bottom: .8em;
+   font-size: 1.429em;
+   font-family: sans-serif;
+   color: #000;
+}
+
+h1, h2 { font-size: 1.571em; }
+
+/* anchors */
+a         { text-decoration: none; color: #0033cc; border: 1px solid transparent; } /*outline: 0;*/
+a:link    { border-bottom: 2px solid #a8bfcf; }
+a:visited { border-bottom: 2px solid #a8bfcf; }
+a:active  { border-bottom: 2px solid #0000ff; }
+a:hover   { border-bottom: 2px solid #0000cc; }
+/* a img     { border: 1px solid transparent; text-decoration: none; } */
+
+/* paragraphs */
+p { margin-bottom: 1.143em; }
+
+/* style tags */
+strong, b { font-weight: bold; }
+em, i     { font-style: italic; }
+
+/* code */
+pre, code, tt { font: 1em monospace; line-height: 1.5; padding: 10px; } 
+
+/* lists */
+ul { font-family: verdana, sans-serif; font-size: 1em; }
+ol { list-style: outside decimal; } 
+
+acr { text-transform: uppercase; }
+
+dl { margin: 0 0 1.5em 0; }
+dt { font-weight: bold;   }
+dd { margin-left: 1.5em;  }
+
+/* quotes */
+blockquote { font-style: italic; }
+cite {}
+q {}
+
+table { 
+  border-collapse: collapse; 
+  font-size: small;
+}
+tr { 
+  line-height: 20px; 
+  vertical-align: top; 
+}
+th, td {  
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+  
+/* forms */
+
+form     { }
+label    { float: left; clear: both; display: block; }
+fieldset { clear: both; margin:10px; border: 1px solid #ccc; font-size: .9em; }
+legend   { font-size: .9em; color: #999; }
+
+fieldset ul          { list-style: none; }
+fieldset li label    { float: left; clear: right; width: 50px; }
+fieldset li input    { width: 50px; margin:0; }
+fieldset li textarea { width: 300px; height: 200px;  padding:5px; font-size:1em; }
+
+input[type="text"], 
+input[type="email"] { 
+  width:150px; 
+  display:block; 
+  float: right; 
+}
+
+/* buttons */
+input[type="button"], 
+input[type="reset"], 
+input[type="submit"],
+button[type="button"], 
+button[type="reset"], 
+button[type="submit"] { 
+  width: 100px;
+  background-color: #d4e6fc; 
+  border: 1px solid #7aa5d6;
+  padding: 2px;
+
+  font-family: Verdana;
+  color: #333;
+}
+input[type="button"]:hover, 
+input[type="reset"]:hover, 
+input[type="submit"]:hover,
+button[type="button"]:hover, 
+button[type="reset"]:hover, 
+button[type="submit"]:hover { 
+  background-color:#7aa5d6; 
+}
+input[type="button"]:active, 
+input[type="reset"]:active, 
+input[type="submit"]:active,
+button[type="button"]:active, 
+button[type="reset"]:active, 
+button[type="submit"]:active {
+  background-color: #666;
+}
+
+
+ul.horizontal_list    { display: block; list-style: none; padding: 0px; margin: 0px; background-color: #ff0; }
+ul.horizontal_list li { float: left; padding-left:20px; padding-right:20px; text-align: center; background-color: #fff;}
+ul.horizontal_list a  { display: block;  }
+
+
+/* useful snippets */
+
+/* url after link */ 
+a:after { } /* content: " (" attr(href) ")"; */
+
+/* "remember this" after p */
+p:after { } /* content:"- Remember this"; background-color:yellow; color:red; font-weight:bold; */
+
+/*
+    validation
+*****************/
+#validation      { border-top: 1px dotted #ccc; list-style: none; margin-left: 0px; padding: 0; font-size: .8em; }
+#validation li   { float: left; margin-top: 5px; margin-left: 20px; padding-right: 10px;  }
+#validation a    { display: block; }
