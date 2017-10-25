@@ -1,0 +1,72 @@
+<!doctype html>
+
+<!--
+    Filename: moversAndShakers.html
+    Written by: Tyler S. Stinson
+    Date: 14-6-2017
+    
+-->
+<html lang="en">
+<head>
+
+<meta charset="utf-8" />
+<title>Movers and Shakers</title>
+<title>N341</title>
+<link rel="stylesheet" href="css/global.css" type="text/css" /> 
+<link rel="stylesheet" href="css/moversAndShakers.css" type="text/css" /> 
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+   google.load("jquery","1");
+</script>
+<script type="text/javascript" src="js/moversAndShaker.js"></script>
+<style type = "text/css">
+
+</style>
+</head>
+    <body>
+		<header>
+			<h1>CSCI N341 Movers and Shakers</h1>
+			<p>Let's see what this ship can do!</p>
+			<p>Use the controls to move the ship across the ocean!</p>
+		</header>
+	<div class="boatControlConsole">
+		<div id="contols">
+			<form>
+			<fieldset>
+				<legend>Ship Movement</legend>
+				<button type="button" id="right"> -> </button>
+				<button type="button" id="up">^</button>
+				<button type="button" id="down">v</button>
+				<button type="button" id="left"> <-	 </button>
+				<button type="button" id="toggle">Toggle Cloak</button>
+				<button type="button" id="cloak">Cloak</button>
+				<button type="button" id="uncloak">Uncloak</button>
+				<button type="button" id="hideShip">Hide Ship</button>
+				<button type="button" id="showShip">Show Ship</button>
+				<button type="button" id="shipFadeO">Fade Out</button>
+				<button type="button" id="shipFadeI">Fade In</button>
+			</fieldset>
+			</form>
+		</div>
+	</div>
+	<div class="map">
+	<div id="box_spot">
+      <p class="box_text">center</p>
+    </div>
+    <div id="box">
+		<textarea name="boat" readonly rows="6" cols="14">
+       _~
+    _~ )_)_~
+    )_))_))_)
+    _!__!__!_
+    \______t/
+  ~~~~~~~~~~~~~
+		</textarea>
+    </div>
+  </div>
+	<!--source: http://www.ascii-art.de/ascii/ab/boat.txt -->
+
+    </body>
+
+</html>
