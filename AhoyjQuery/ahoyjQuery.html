@@ -1,0 +1,42 @@
+<!doctype html>
+
+<!--
+    Filename: ahoyjQuery.html
+    Written by: Susie Smart
+    Purpose: jQuery Development Environment Setup
+    Date: 10/04/2012
+	Last Modified by: Tyler S. Stinson
+    Modification History:
+	30 Jan 2015: Changed directories to match typhoon structure (LJC)
+	24 Mar 2015: Updated Google-hosted jQuery library to version 2.1.3 (LJC)
+	03 Jun 2015: Updated Google-hosted jQuery library to version 2.1.4 (LJC)
+    09 Jan 2016: Correct broken link to css file (LJC)
+	2017: Changed javascript src link to js/allo1.js
+-->
+
+
+<html lang="en">
+    <head>
+    
+        <title>jQuery Development Environment Setup</title>
+        <meta charset="utf-8">
+        <!-- Link to some stylesheet goes first -->
+        <link href="css/n341.css" rel="stylesheet" type="text/css">
+		<!-- Link to hosted jQuery library goes after css file but before local js file -->
+        <!-- Probable performance boost if at very bottom of file -->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+        <!-- Link to js file specific to this html page goes below hosted library link -->
+        <script type="text/javascript" src="js/allo1.js"></script>
+    </head>
+    
+    <body>
+		<p>
+        	This paragraph tag exists so that I can play with it in jQuery
+        </p>
+		<br><br>
+		<button id = "append">Append</button>
+		<button id = "html">HTML</button>
+    </body>
+
+</html>
