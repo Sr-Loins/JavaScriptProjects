@@ -1,0 +1,33 @@
+*{
+	margin:0 0 6px;
+}
+header{
+	text-align:left;
+	color:white;
+	background-color:#134;
+	padding:30px 150px;
+}
+body {
+	background-image: url("r2j8e7ipexuoaxgrhicb.jpg");	/*	Use the Color Picker to find the hex code of your favorite color
+									http://www.w3schools.com/tags/ref_colorpicker.asp */
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+body p {
+	padding-left: 2em;
+}
+
+li, li a{						/* Define the formatting for the links to the labs */
+	list-style: none;
+	background-color: #43ABA4;
+	color: white;
+	border-radius: 3px;
+	padding: 1px;
+}
+
+
+#pirates ul {
+	float:left;
+	width: 300px;
+}
+
