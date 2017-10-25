@@ -1,0 +1,20 @@
+/* CSS for adding content example */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:800italic);
+
+body { 
+    font-family: "Courier New", Courier, monospace;
+
+	background: url("hqdefault.jpg"); /*	Use the Color Picker to find the hex code of your favorite color
+									http://www.w3schools.com/tags/ref_colorpicker.asp */
+	background-size: cover;
+	background-repeat: no-repeat;
+
+     
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0;
+    padding: 0;}
+}
