@@ -1,0 +1,29 @@
+*{
+	margin:0 0 6px;
+}
+header{
+	text-align:left;
+	color:white;
+	background-color:#134;
+	padding:30px 150px;
+}
+
+
+#town1explosion{
+	position: relative;
+	top: -175px; 
+	z-index: -1;
+}
+
+#town2{
+	position: relative;
+	top: -340px;
+	right: -650px;
+}
+
+#town2explosion{
+	position: relative;
+	top: -570px;
+	right: -650px;
+	z-index: -1;
+}
