@@ -1,0 +1,118 @@
+<!doctype html>
+
+<!--
+TITLE: 
+AUTHOR: Tyler S. Stinson
+PURPOSE: Class Index Page to Host Lab Work for N341
+NOTE: Based on template provided by instructor
+ORIGINALLY CREATED ON: 01/09/2013
+LAST MODIFIED ON: 3 June 2017
+LAST MODIFIED BY: Tyler S. Stinson
+MODIFICATION HISTORY: 
+01/09/2013: Create date
+07/04/2013: Created link for hello world program
+29 Jan 2015: Changed directories to match typhoon structure (LJC)
+06 May 2015: Added comments with instructions to move the css to an external file (LJC)
+14 Jan 2016: Add comment to delete the <style> tags after moving CSS to external file (LJC)
+12 May 2017: Changed comments for Server Publication exercise
+3 June 2017: Added link to loopiness assignment
+5 June 2017: Added link to moreIfs assignment
+-->
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="myFavoriteStyle.css">    
+<title>N341 Student Course Page</title>
+
+<!-- This css provides the colors and formatting for the page.
+     In this class, we will keep our css in an external file.
+     This internal css is included to keep the initial process simple. -->
+
+<!-- End of internal css -->
+<!-- 
+	To move the css to an external file: 
+	1. copy everything that is between the <style> tag and the </style> tag
+	2. paste it to a new text file & delete the <style> tags.
+	3. save the file with a unique file name. You can call it myFavoriteStyle.css
+		a. You could save it in the same folder with your html file. 
+			If you do, be sure to include the following link in the <head> of your html file:
+			<link rel="stylesheet" type="text/css" href="myFavoriteStyle.css">
+		b. If you want to put your css file into its own css folder, follow these steps:
+			- Create a folder called css inside your main folder
+			- Save your myFavoriteStyle.css to the new css folder
+			- include the following link in the <head> of your html file:
+			<link rel="stylesheet" type="text/css" href="css/myFavoriteStyle.css">
+	4. Test your html page to be sure it is linking to the css page
+		Do the colors and formatting look correct?
+	5. For future web pages, just include the same link to get the desired formatting. Changing the css file
+		modifies every page that uses that file.
+	6. Feel free to delete "Josephina Student" and the instructional comments.
+	7. Also please do what you like to customize the page to your own liking. In this class, I want to encourage creativity.
+ -->
+</head>
+
+<body>
+	<header>
+		<h1>CSCI N341 Course Page</h1>
+		<p>By Tyler S. Stinson</p>
+    </header>
+	<div id="assignments">
+		<h3> Course Work </h3>
+		<hr/> <!-- Draw a horizontal line with formatting defined by css -->
+ 
+		<ul>  <!-- Beginning of unordered list -->
+		
+			<li>  <!-- Start of first list item -->
+				<a href="testFile.html">Test File</a>  <!-- link to the Test File To Launch Our N341 Journey -->
+			</li>  <!-- End of first list item -->
+			
+			<li>  <!-- Start of second list item -->
+				<a href="jsHelloWorld.html">JS Hello World</a>  <!-- link to YOUR jsHelloWorld lab -->
+			</li>  <!-- End of second list item -->
+			
+			<li>
+				<a href="multiWrites.html">Multi Writes</a>
+			</li>
+            <li>
+				<a href="conversions/conversions.html">Conversions</a>
+			</li>
+			<li>
+				<a href="Functions/functions.html">Functions</a>
+			</li>
+			<li>
+				<a href="randomness/randomness.html">Randomness</a>
+			</li>
+			<li>
+				<a href="iffyProgramming/index.html">IffyProgramming</a>
+			</li>
+			<li>
+				<a href="loopieness/loopieness.html">Loopieness</a>
+			</li>
+			</ul>
+			<ul>
+			<li>
+				<a href="moreIfs/moreIfs.html">MoreIfs</a>
+			</li>
+			<li>
+				<a href="strings/strings.html">Strings</a>
+			</li>
+			<li>
+				<a href="AhoyjQuery/ahoyjQuery.html">AhoyJQuery</a>
+			</li>
+			<li>
+				<a href="pickMe/pickMe.html">Pick Me!</a>
+			</li>
+			<li>
+				<a href="triggered/triggered.html">Triggered</a>
+			</li>
+			<li>
+				<a href="moversAndShakers/moversAndShakers.html">Movers And Shakers</a>
+			</li>
+			<li>
+				<a href="buttons/buttons.html">Buttons</a>
+			</li>
+        
+		</ul>  <!-- End of unordered list -->
+	 
+	</div><!-- end div id="assignments" -->
+</body>
+</html>
