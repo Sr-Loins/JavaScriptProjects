@@ -1,0 +1,193 @@
+@charset "utf-8";
+
+.ship{
+	width:300px;
+	height:300px;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+}
+
+.dice{
+	width:300px;
+	height:320px;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+}
+
+.textDisplay{
+	width: 532px;
+	height: 170px;
+	border: 5px #000000 solid;
+	background-color: #ffffff;
+	border-radius: 25px;
+	padding: 9px;
+	font-size: 12px;
+	color: black;
+}
+
+#redShip {
+	background-image: url(../img/redship.png);
+}
+
+#whiteDice {
+	background-image: url(../img/dice.png);
+}
+
+#blackShip {
+	background-image: url(../img/blackship.png);
+}
+#brownShip {
+	background-image: url(../img/browship.png);
+}
+
+body     { }
+h1, h2   { margin-top: 2px; margin-bottom: 0px; }
+h1       { color: #0066CC; }
+h2       { color: #a8bfcf; padding-bottom: 5px; font-size: 1.25em; border-bottom: 1px solid #ccc; margin-bottom: 10px;}
+
+a                 { border: 1px solid transparent; font-family: verdana, monospace;  }
+a:link, a:visited { border: 1px solid transparent; }
+a:hover, a:active { background-color: #9cf; border: 1px solid #09f; }
+
+caption   { text-align: right; padding: 10px; margin: 0px; font-size: .9em; }
+
+.lab      { background-color: #ffc; border: 1px solid #ccc; padding: 5px; }
+span.lab  { padding: 5px; }
+
+#storyResult { 
+  width: 100%; border:0px; color: #333; 
+  float: left; text-align: center; 
+  font-size: 1.5em; background-color: transparent; }
+
+/* tables */
+table { 
+  margin: 5px; 
+  width: 98%; 
+  border: 1px solid transparent; 
+  background-color: transparent; 
+  font-family: verdana;
+}
+tr    { border: 1px solid #ccc; line-height: 20px; vertical-align: top; }
+th    { 
+  padding-left: 5px; 
+  text-align: left; 
+  font-weight: normal;
+  color: #333;
+}
+td { 
+  padding-left: 5px;   
+}
+
+
+/* forms */
+form                 { }
+label                { }
+fieldset             { clear: both; margin:10px; border: 1px solid #ccc; font-size: .9em; }
+legend               { }
+
+input[type="button"], input[type="reset"], input[type="submit"],
+button[type="button"], button[type="reset"], button[type="submit"] { 
+	width: 100px;
+	background-color:#d4e6fc; 
+ 	border: 1px solid #7aa5d6;
+	color: #333;
+	font-family: Verdana;
+	padding: 2px; /* padding: 2px 25px; */
+ 	margin-left: auto;
+  	margin-right: auto;
+}
+input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover,
+button[type="button"]:hover, button[type="reset"]:hover, button[type="submit"]:hover { 
+	background-color:#7aa5d6; 
+}
+
+/* console */
+.console_title { font-size: 2em; text-align: left; color: #000; padding-top: 30px; margin: 10px; }
+.console { 
+	overflow:hidden; 
+ 	width: 800px; 
+  background-color: #fff; 
+	border: 1px solid #ccc; 
+}
+#controls { float:left; max-width: 300px; }
+#controls label { display: block; clear: both; float: left; }
+#controls input[type="text"], input[type="email"] { width:150px; display:block; float: right; }
+#controls input[type="radio"] { width:50px; display:block; float: left; margin-left: 10px; }
+#controls input[type="button"], input[type="reset"], input[type="submit"] {  }
+
+#content  {  margin-left: 300px;  }
+
+/* catconsole */
+.catconsole { 
+	overflow:hidden; 
+ 	width: 700px; 
+  	height: 400px;
+  	background-color: #fff; 
+	border: 1px solid #ccc; }
+.catconsole #controls { float: left; width: 150px; background-color: #ffc; border-right: 1px solid #ccc; }
+.catconsole label     { display: block; clear: both; float: left; }
+.catconsole input[type="text"], input[type="email"] { width: 150px; display: block; float: right; }
+.catconsole input[type="radio"]                     { width:50px; display:block; float: left; margin-left: 10px; }
+.catconsole input[type="button"], input[type="reset"], input[type="submit"] {  }
+.catconsole #content  { }
+.catconsole img { display:block; margin-left: auto; margin-right: auto; }
+
+/* animationconsole */
+.animationconsole  { 
+	overflow: hidden;
+ 	height: 600px;
+	border: 3px solid black; 
+ 	text-align: left; 
+  	color: #000; 
+   	padding: 20px; }
+.animationconsole #box {
+  width: 100px;
+  height: 100px;
+  border: 5px solid gray;
+  background-color: #ffc;
+  position: absolute;
+  top: 250px;
+  left: 250px;
+  text-align: center;
+  z-index: -1;
+}
+.animationconsole #box_spot {
+  width: 100px;
+  height: 100px;
+  border: 1px dashed #999;
+  position: absolute;
+  top: 250px;
+  left: 250px;
+  text-align: center;
+  z-index: -2;
+}
+.animationconsole #controls { width: 140px; height: 600px; float: left; background-color: #ffc; border: 1px solid #666;}
+.animationconsole button        { border: 1px solid #666; background-color: #eee; } 
+.animationconsole button:hover  { background-color: #ccc; border: 1px solid #999; }
+.animationconsole #content      {  position: relative; margin-left: 141px; border: 1px solid #333; background-color: #fff; width: 600px; height: 600px; z-index: -3; }
+p.box_text {  padding-top: 15px; }
+
+
+
+
+/* boxes */
+.js_example { border: 1px dotted #999; background-color: #ffc; margin: 10px; padding: 20px;}
+.output     { border: 1px dotted #cc0; background-color: #fcf; margin: 10px; padding: 20px;}
+.js         { background-color: #ffc; }
+.html       { background-color: #cff; }
+
+.cat { min-height: 300px; margin-left: auto; margin-right: auto; width: 600px; text-align: center; background-color: #fff; border: 1px dotted #999; }
+
+.locked a { /* text-decoration: line-through; */ color: #999; }
+.locked a:link,  .locked a:visited { border-bottom: 0px dotted #a8bfcf; }
+.locked a:hover, .locked a:active  { background-color: #ccc; border: 1px solid #999; }
+
+.in-progress a { color: #FF33CC; }
+.in-progress a:link,  .in-progress a:visited { border-bottom: 0px dotted #a8bfcf; }
+.in-progress a:hover, .in-progress a:active  { background-color: #FFEBFA; border: 1px solid #FF33CC; }
+.in-progress a:hover:after { content:"- in progress"; background-color: transparent; border: 1px solid transparent; } 
+
+
+.vlist     { list-style: square; margin: 0; padding: 0; overflow: hidden;    }
+.vlist li  { float: left; margin-left: 20px; padding-right: 5px; }
+.vlist a   { display: block;  }
